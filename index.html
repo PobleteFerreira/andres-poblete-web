@@ -108,7 +108,7 @@ cat << 'EOF' > index.html
         const errorDiv = document.getElementById('error-message');
         try {
             // Buscamos el JSON generado por tu extractor en la carpeta public
-            const response = await fetch('./public/data/ecosistema.json');;
+            const response = await fetch('./public/data/ecosistema.json');
             if (!response.ok) {
                 throw new Error(`No se pudo cargar el archivo de datos (Status: ${response.status})`);
             }
